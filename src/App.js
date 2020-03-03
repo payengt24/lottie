@@ -1,23 +1,21 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Lottie from 'react-lottie';
+import like from './like.json'
+import walk from './walk.json'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <Lottie options={{loop: true, animationData: like, autoplay: true}} style={{width: 200}}></Lottie>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Walk to React Lottie
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Lottie options={{loop: true, animationData: walk, autoplay: true}} style={{width: 500, position: 'fixed', right: 350, bottom: 0}}></Lottie>
+        <Lottie options={{loop: true, animationData: walk, autoplay: true}} style={{width: 500, position: 'fixed', left: 350, bottom: 0}}></Lottie>
+
       </header>
     </div>
   );
