@@ -4,6 +4,7 @@ import './App.css';
 import Lottie from 'react-lottie';
 import like from './like.json'
 import walk from './walk.json'
+import construction from './construction.json'
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
         <Lottie options={{loop: true, animationData: walk, autoplay: true}} style={{width: 500, position: 'fixed', left: 350, bottom: 0}}></Lottie>
 
       </header>
+      <Lottie options={{loop: true, animationData: construction, autoplay: true}} style={{width: '100%'}}></Lottie>
+
     </div>
   );
 }
